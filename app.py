@@ -2,7 +2,7 @@
 import streamlit as st
 from auth_pages import login_signup_page
 from main_app import main_app_content
-from mongo_handler import get_user_data
+# from mongo_handler import get_user_data
 
 # --- Streamlit Session State Management ---
 if 'logged_in' not in st.session_state:

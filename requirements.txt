@@ -1,9 +1,18 @@
+# Core app
 streamlit
+
+# File handling
 pdfplumber
 python-docx
+
+# Data & visualization
+plotly
+
+# AI / LLM stack
 openai
 langchain==0.0.354
 langchain-community==0.0.20
 langchain-openai==0.0.6
-tiktoken
+
+# Utilities
 python-dotenv

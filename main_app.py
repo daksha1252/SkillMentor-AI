@@ -48,7 +48,7 @@ def show_upload_page(user_id=None):
 
     # User Inputs
     interests = st.multiselect("Select your interests:",
-                               ["Artificial Intelligence", "Web Development", "Data Science",
+                               ["Full Stack Development","Artificial Intelligence", "Web Development", "Data Science",
                                 "Cybersecurity", "Cloud Computing", "Mobile App Development",
                                 "Game Development", "UI/UX Design", "Software Developer"])
     st.session_state["interests"] = interests
@@ -56,11 +56,11 @@ def show_upload_page(user_id=None):
     career_goal_known = st.checkbox("I know my career goal")
     if career_goal_known:
         career_goal = st.selectbox("Select your career goal:",
-                                   ["Data Scientist", "Software Engineer", "Cybersecurity Analyst",
-                                    "Cloud Architect", "Mobile App Developer","Frontend Developer"])
+                                   ["Java Full Stack Developer","Python Full Stack Developer","Mern Stack Developer","Data Scientist", "Data Engineer", "Cybersecurity Analyst",
+                                    "Cloud Architect", "Mobile App Developer","Frontend Developer","UI/UX Designer"])
         st.session_state['career_goal'] = career_goal
     else:
-        st.info("Based on your resume and interests, we will suggest a suitable role.")
+        st.info("Based on your resume and interests, a suitable role will be suggested.")
         if st.button("Suggest me a career goal"):
             llm = ChatOpenAI(model="gpt-4o", api_key=openai_api_key, temperature=0)
             prompt = f"""
@@ -99,7 +99,7 @@ Return ONLY the job title as plain text.
 
 # Dashboard Page
 def show_dashboard_page():
-    st.title("Resume Analysis Dashboard 📊")
+    st.title("Resume Analysis Dashboard 📊",)
     analysis_result = st.session_state.get("analysis_result")
     career_goal = st.session_state.get("career_goal")
     resume_uploaded = st.session_state.get("resume_uploaded", False)

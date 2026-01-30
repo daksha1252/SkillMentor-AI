@@ -20,7 +20,7 @@ The user is missing the following skills: {', '.join(missing_skills)}
 
 Tasks:
 1. Generate a structured learning roadmap to bridge these skill gaps.
-2. Suggest relevant online courses from Udemy, Coursera, edX, Infosys Springboard.
+2. Suggest relevant online courses from Tap Academy courses in Youtube if available, Udemy, Coursera, edX, Infosys Springboard and provide the best platform to learn.
 3. Provide the order in which the skills should be learned.
 4. Give an estimated timeline for each skill/course (e.g., 1-2 weeks, 2-3 weeks or in months).
 

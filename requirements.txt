@@ -1,9 +1,9 @@
 streamlit
 pdfplumber
 python-docx
-langchain
-langchain-community
-langchain-openai
 openai
+langchain==0.0.354
+langchain-community==0.0.20
+langchain-openai==0.0.6
 tiktoken
 python-dotenv
